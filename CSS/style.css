@@ -3,3 +3,13 @@
     margin:  0;
     box-sizing: border-box;
 }
+
+:root {
+    --blue-1-color: #163958;  
+    --blue-2-color: #2889c4;  
+    --blue-3-color: #496d9c;  
+    --blue-4-color: #93a7c2;  
+    --blue-5-color: #d5ebf7;  
+    --white-color: #ffffff;  
+    --black-color: #000000;  
+}
