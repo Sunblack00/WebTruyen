@@ -13,7 +13,7 @@
     --white-color: #ffffff;  
     --black-color: #000000; 
     --color-1-text: #0b9396;
-    --color-2-text: rgb(159, 146, 146);
+    --color-2-text: #106a6b;
 }
 
 .container-fluid {
@@ -60,7 +60,6 @@ header nav ul{
 header nav li {
     list-style: none;
     padding: 15px 20px;
-   
 }
 
 nav li:hover a {
