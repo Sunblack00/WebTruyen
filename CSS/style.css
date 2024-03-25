@@ -11,16 +11,65 @@
     --blue-4-color: #93a7c2;  
     --blue-5-color: #d5ebf7;  
     --white-color: #ffffff;  
-    --black-color: #000000;  
+    --black-color: #000000; 
+    --color-1-text: #0b9396;
+    --color-2-text: rgb(159, 146, 146);
 }
 
 .container-fluid {
     padding: 0;
 }
 
+.row>* {
+    padding-right: - calc(var(--bs-gutter-x)* .5);
+}
+
 header {
+    display: flex;
     height: 300px;
     background-color: var(--blue-5-color);
+}
+
+header .img {
+    width: 30%;
+    height: 100px;
+    border-bottom:1px solid var(--color-1-text);
+}
+
+header .img img {
+    height: 100px;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100px;
+    border-bottom:1px solid var(--color-1-text);
+}
+
+header nav ul{
+    display: flex;
+    margin-block-end: 0;
+}
+
+header nav li {
+    list-style: none;
+    padding: 15px 20px;
+   
+}
+
+nav li:hover a {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-1-text);
+    color: var(--color-2-text);
+    transition:all 0.3s ;
+}
+
+header li a {
+    text-decoration: none;
+    color: var(--color-1-text);
 }
 
 aside {
@@ -30,22 +79,59 @@ aside {
 
 section {
     width: 100%;
-    height: 200px;
+    float: right;
+    padding-right: 12px;
+    background-color: var(--blue-4-color);
+    padding-bottom: 50px;
 }
 
-.content {
-    width: 100%;
+section img {
+    width: 200px;
+    height: 300px;
+    border-radius: 25px 25px 0px 0px; 
+}
+
+section .tentruyen {
     display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 11px;
+    height: 50px;
+    border-radius: 0 0 25px 25px; 
+    background-color: var(--black-color);
+    padding: 0 15px;
 }
 
-.content-1 {
-    width: 30%;
-    height: 100px;
+section .box-shadow {
+    width: 200px;
+    height: 350px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px var(--blue-3-color);
+    transition: all 0.3s;
 }
 
-.content-2 {
-    width: 70%;
-    height: 100px;
+section .box-shadow:hover {
+    box-shadow: 10px 10px 15px var(--blue-2-color);
+}
+
+section .box-shadow:hover {
+    transform: translateY(-8px);
+}
+
+section .box-shadow:hover .tentruyen {
+    color: var(--blue-2-color);
+}
+
+section a {
+    color: var(--color-2-text);
+    text-decoration: none;
+    
+}
+
+.row {
+    margin-left: 60px;
 }
 
 .color-ct-1 {
