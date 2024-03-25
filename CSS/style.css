@@ -10,10 +10,13 @@
     --blue-3-color: #496d9c;  
     --blue-4-color: #93a7c2;  
     --blue-5-color: #d5ebf7;  
-    --white-color: #ffffff;  
+    --blue-6-color: #b5cef0; 
     --black-color: #000000; 
+    --white-color: #ffffff; 
     --color-1-text: #0b9396;
     --color-2-text: #106a6b;
+    --search: #535d734e;
+    --icon: #e74c3c;
 }
 
 .clear {
@@ -80,12 +83,14 @@ header li a {
 
 aside {
     height: 100px;
-    background-color: var(--white-color);
+    background-color: var(--blue-6-color);
     border-radius: 25px;
     box-shadow: 0 0 15px var(--blue-4-color);
     margin: 10px 0 20px;
     padding: 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section {
@@ -152,40 +157,52 @@ footer {
     box-shadow: 0 -5px 15px var(--blue-4-color);
 }
 
-.searchbar{
-    margin-bottom: auto;
-    margin-top: 15px;
-    height: 60px;
-    width: 500px;
-    background-color: #353b48;
+.searchbar {
+    background-color: var(--search);
     border-radius: 30px;
     padding: 10px;
-    }
+    transition: width 0.2s linear;
+}
 
-    .search_input{
-    color: white;
+.searchbar .search_icon{
+    color: var(--black-color);
+}
+
+.search_input {
+    color: var(--white-color);
+    caret-color: var(--black-color);
     border: 0;
     outline: 0;
     background: none;
-    width: 0;
-    caret-color:transparent;
     line-height: 40px;
-    transition: width 0.4s linear;
-    }
+    margin-left: 20px;
+    width: 80%;
+}
 
-    .searchbar:hover > .search_input{
-    padding: 0 10px;
-    width: 400px;
+.btn-secondary {
+    background-color: var(--search);
+    color: var(--black-color);
+    border: none;
+}
+
+.search_input::placeholder {
+    color: var(--black-color);
+}
+
+.searchbar:hover > .search_input {
     caret-color:red;
-    transition: width 0.4s linear;
-    }
+}
 
-    .searchbar:hover > .search_icon{
+.searchbar:hover > .search_input::placeholder {
+    color:var(--white-color);
+}
+
+.search_icon:hover {
     background: white;
-    color: #e74c3c;
-    }
+    color: var(--icon);
+}
 
-    .search_icon{
+.search_icon {
     height: 40px;
     width: 40px;
     float: right;
@@ -195,23 +212,20 @@ footer {
     border-radius: 50%;
     color:white;
     text-decoration:none;
-    }
-    #icon{
-        width: 30px;
-        height: 30px;
-    }
-    #dangky_dangnhap{
+}
+
+#dangky_dangnhap {
     margin-bottom: auto;
     margin-top: auto;
     height: 60px;
     border-radius: 30px;
     padding: 10px;
-    margin-right: 20px;
     display: flex;
-    }
-    #dangky_dangnhap>button{
-        margin-right: 10px;
-        text-align: center;
-        width: 120px;
-    }
+}
+
+#dangky_dangnhap > button {
+    margin-right: 15px;
+    text-align: center;
+    width: 120px;
+}
 
