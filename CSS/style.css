@@ -16,12 +16,16 @@
     --color-2-text: #106a6b;
 }
 
-.container-fluid {
-    padding: 0;
+.clear {
+    clear: both;
 }
 
-.row>* {
-    padding-right: - calc(var(--bs-gutter-x)* .5);
+.row {
+    margin-left: 8px;
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 header {
@@ -29,7 +33,7 @@ header {
     height: 300px;
     background-color: var(--blue-5-color);
     border-radius: 0 0 25px 25px;
-    box-shadow: 0 10px 15px var(--blue-3-color);
+    box-shadow: 0 3px 15px var(--blue-4-color);
     margin-bottom: 20px;
 }
 
@@ -78,7 +82,7 @@ aside {
     height: 100px;
     background-color: var(--white-color);
     border-radius: 25px;
-    box-shadow: 0 0 15px var(--blue-3-color);
+    box-shadow: 0 0 15px var(--blue-4-color);
     margin: 10px 0 20px;
 }
 
@@ -88,6 +92,8 @@ section {
     padding-right: 12px;
     background-color: var(--blue-4-color);
     padding-bottom: 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px var(--blue-4-color);
 }
 
 section img {
@@ -135,29 +141,13 @@ section a {
     
 }
 
-.row {
-    margin-left: 60px;
-}
-
-.color-ct-1 {
-    background-color: var(--black-color);
-}
-
-.color-ct-2 {
-    background-color: var(--blue-1-color);
-}
-
-.color-ct-3 {
-    background-color: var(--blue-3-color);
-}
-
-.color-ct-4 {
-    background-color: var(--blue-2-color);
-}
 
 footer {
     height: 100px;
+    margin-top: 20px;
     background-color: var(--white-color);
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 -5px 15px var(--blue-4-color);
 }
 
 
