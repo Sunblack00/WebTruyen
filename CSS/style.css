@@ -31,6 +31,37 @@
     padding: 0;
 }
 
+.cham {
+    display: inline-block ;
+    text-align: center ;
+    width: 10px ;
+    font-size: 14px ;
+    line-height: 14px ;
+}
+
+.ft-chu {
+    text-decoration: none;
+    color: var(--black-color);
+    
+}
+
+.ft-chu:hover {
+    text-decoration: underline;
+}
+
+.fa-globe {
+    margin-right: 5px;
+}
+
+.fa-facebook-square {
+    margin-right: 5px;
+}
+
+.fa-icon:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 header {
     display: flex;
     height: 300px;
@@ -150,11 +181,37 @@ section a {
 
 
 footer {
-    height: 100px;
+    height: 70px;
     margin-top: 20px;
     background-color: var(--white-color);
     border-radius: 25px 25px 0 0;
-    box-shadow: 0 -5px 15px var(--blue-4-color);
+    box-shadow: 0 -5px 15px var(--blue-4-color);   
+    display: flex;
+    align-items: center;
+}
+
+footer .tong {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .name {
+    margin-left: 5%;
+}
+
+footer .icon {
+    margin-right: 5%;
+}
+
+footer .icon span {
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+footer .name img {
+    width: 20px;
+    height: 20px;
 }
 
 .searchbar {
