@@ -6,15 +6,18 @@
 
 :root {
     --blue-1-color: #163958;  
-    --blue-2-color: #2889c4;  
+    --blue-2-color: #35c7c9;  
+    /* 35c7c9 */
+    /* #2889c4 */
     --blue-3-color: #496d9c;  
     --blue-4-color: #93a7c2;  
     --blue-5-color: #d5ebf7;  
     --blue-6-color: #b5cef0; 
     --black-color: #000000; 
     --white-color: #ffffff; 
-    --color-1-text: #0b9396;
-    --color-2-text: #106a6b;
+    --color-1-text: #000000;
+    /* 0b9396 */
+    --color-2-text: #138486;
     --search: #535d734e;
     --icon: #e74c3c;
 }
@@ -102,7 +105,7 @@ header nav li {
 
 nav li:hover a {
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--color-1-text);
+    border-bottom: 1px solid var(--color-2-text);
     color: var(--color-2-text);
     transition:all 0.3s ;
 }
@@ -154,11 +157,26 @@ section .tentruyen {
 }
 
 section .box-shadow {
+    position: relative;
     width: 200px;
     height: 350px;
     border-radius: 25px;
     box-shadow: 10px 10px 15px var(--blue-3-color);
     transition: all 0.3s;
+}
+
+.fa-heart-o {
+    position: absolute;
+    color: var();
+    padding: 5px;
+    top: 7px;
+    right: 9px;
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+
+.fa-heart-o:hover {
+    transform: scale(1.2);
 }
 
 section .box-shadow:hover {
@@ -183,7 +201,7 @@ section a {
 footer {
     height: 70px;
     margin-top: 20px;
-    background-color: var(--white-color);
+    background-color: var(--blue-5-color);
     border-radius: 25px 25px 0 0;
     box-shadow: 0 -5px 15px var(--blue-4-color);   
     display: flex;
@@ -281,6 +299,7 @@ footer .name img {
 }
 
 #dangky_dangnhap > button {
+    border-radius: 30px;
     margin-right: 15px;
     text-align: center;
     width: 120px;
