@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-1-color: #163958;  
+    --blue-2-color: #35c7c9;  
+    /* 35c7c9 */
+    /* #2889c4 */
+    --blue-3-color: #496d9c;  
+    --blue-4-color: #93a7c2;  
+    --blue-5-color: #d5ebf7;  
+    --blue-6-color: #b5cef0; 
+    --black-color: #000000; 
+    --white-color: #ffffff; 
+    --color-1-text: #000000;
+    /* 0b9396 */
+    --color-2-text: #138486;
+    --search: #535d734e;
+    --icon: #e74c3c;
+}
+
+.clear {
+    clear: both;
+}
+
+.row {
+    margin-left: 8px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.cham {
+    display: inline-block ;
+    text-align: center ;
+    width: 10px ;
+    font-size: 14px ;
+    line-height: 14px ;
+}
+
+.ft-chu {
+    text-decoration: none;
+    color: var(--black-color);
+    
+}
+
+.ft-chu:hover {
+    text-decoration: underline;
+}
+
+.fa-globe {
+    margin-right: 5px;
+}
+
+.fa-facebook-square {
+    margin-right: 5px;
+}
+
+.fa-icon:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    background-color: var(--blue-5-color);
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 3px 15px var(--blue-4-color);
+    margin-bottom: 20px;
+}
+
+header .img {
+    width: 30%;
+    height: 100px;
+}
+
+header .img img {
+    height: 100px;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100px;
+}
+
+header nav ul{
+    display: flex;
+    margin-block-end: 0;
+}
+
+header nav li {
+    list-style: none;
+    padding: 15px 20px;
+}
+
+nav li:hover a {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-2-text);
+    color: var(--color-2-text);
+    transition:all 0.3s ;
+}
+
+header li a {
+    text-decoration: none;
+    color: var(--color-1-text);
+}
+
+
+
+footer {
+    height: 70px;
+    margin-top: 20px;
+    background-color: var(--blue-5-color);
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 -5px 15px var(--blue-4-color);   
+    display: flex;
+    align-items: center;
+}
+
+footer .tong {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .name {
+    margin-left: 5%;
+}
+
+footer .icon {
+    margin-right: 5%;
+}
+
+footer .icon span {
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+footer .name img {
+    width: 20px;
+    height: 20px;
+}
+
+
