@@ -18,6 +18,7 @@
     --color-1-text: #000000;
     /* 0b9396 */
     --color-2-text: #138486;
+    --color-3-text: #31a3fa;
     --search: #535d734e;
     --icon: #e74c3c;
 }
@@ -66,12 +67,27 @@
 }
 
 header {
-    display: flex;
-    height: 300px;
+    position: relative;
+    height: 500px;
     background-color: var(--blue-5-color);
     border-radius: 0 0 25px 25px;
     box-shadow: 0 3px 15px var(--blue-4-color);
     margin-bottom: 20px;
+}
+
+.carousel img {
+    border-radius: 0 0 25px 25px;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-clip: text;
+}
+
+header .head {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    z-index: 5;
 }
 
 header .img {
@@ -105,8 +121,8 @@ header nav li {
 
 nav li:hover a {
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--color-2-text);
-    color: var(--color-2-text);
+    border-bottom: 1px solid var(--color-3-text);
+    color: var(--color-3-text);
     transition:all 0.3s ;
 }
 

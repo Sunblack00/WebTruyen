@@ -112,6 +112,10 @@ header li a {
     color: var(--color-1-text);
 }
 
+.dau {
+    height: 500px;
+    background: url(../IMG/nen/nen_tieude_truyentranh.jpg) repeat-x;
+}
 
 
 footer {
