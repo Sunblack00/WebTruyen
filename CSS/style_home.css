@@ -18,9 +18,13 @@
     --color-1-text: #000000;
     /* 0b9396 */
     --color-2-text: #138486;
-    --color-3-text: #31a3fa;
+    --color-3-text: #66bdfa;
     --search: #535d734e;
     --icon: #e74c3c;
+    --pagination: #649bbf;
+    --bd-pagination: #000000;
+    --pagination-ac: #216592;
+    --bd-pagination-ac: #000000;
 }
 
 .clear {
@@ -68,7 +72,7 @@
 
 header {
     position: relative;
-    height: 500px;
+    /* height: 500px; */
     background-color: var(--blue-5-color);
     border-radius: 0 0 25px 25px;
     box-shadow: 0 3px 15px var(--blue-4-color);
@@ -80,7 +84,27 @@ header {
 }
 
 .carousel-indicators [data-bs-target]{
-    background-clip: text;
+    /* background-clip: text; */
+}
+
+.pagination .page-link {
+    background-color: var(--pagination);
+    color: var(--black-color);
+    border: var(--bd-pagination) 1px solid; 
+}
+
+.active>.page-link {
+    z-index: 3;
+    color: var(--white-color);
+    background-color: var(--pagination-ac);
+    border-color: var(--bd-pagination-ac);
+}
+
+.page-link:hover {
+    /* z-index: 2; */
+    color: var(--bs-pagination-hover-color);
+    background-color: var(--blue-4-color);
+    border-color: var(--bd-pagination);
 }
 
 header .head {
