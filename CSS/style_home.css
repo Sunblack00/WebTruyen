@@ -29,6 +29,10 @@
     --bd-pagination-ac: #000000;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .clear {
     clear: both;
 }
