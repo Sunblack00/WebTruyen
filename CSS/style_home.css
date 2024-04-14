@@ -11,7 +11,7 @@
     /* #2889c4 */
     --blue-3-color: #496d9c;  
     --blue-4-color: #93a7c2;  
-    --blue-5-color: #d5ebf7;  
+    --blue-5-color: #d6ecfe;  
     --blue-6-color: #b5cef0; 
     --black-color: #000000; 
     --white-color: #ffffff; 
@@ -19,11 +19,13 @@
     /* 0b9396 */
     --color-2-text: #138486;
     --color-3-text: #66bdfa;
+    --color-4-text: #000000;
     --search: #535d734e;
     --icon: #e74c3c;
-    --pagination: #649bbf;
+    --hear: rgb(228, 214, 17);
+    --pagination: #d6ecfe;
     --bd-pagination: #000000;
-    --pagination-ac: #216592;
+    --pagination-ac: #138486;
     --bd-pagination-ac: #000000;
 }
 
@@ -70,21 +72,59 @@
     cursor: pointer;
 }
 
-header {
-    position: relative;
-    /* height: 500px; */
-    background-color: var(--blue-5-color);
-    border-radius: 0 0 25px 25px;
-    box-shadow: 0 3px 15px var(--blue-4-color);
+.fixed {
+    width: 100%;
+    position: fixed;
+    display: none;
+    z-index: 10;
     margin-bottom: 20px;
+    box-shadow: 0 2px 5px var(--blue-4-color);
+    border-radius: 0 0 25px 25px;
+}
+
+.fixed .img {
+    width: 30%;
+    height: 50px;
+}
+
+.fixed .img img {
+    height: 50px;
+}
+
+.fixed nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border: none;
+    height: 50px;
+}
+
+.fixed nav ul{
+    display: flex;
+    margin-block-end: 0;
+}
+
+.fixed nav li {
+    list-style: none;
+    font-size: 13px;
+    padding: 15px 20px;
+}
+
+.fixed li:hover a {
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--color-2-text);
+    color: var(--color-3-text);
+    transition:all 0.3s ;
+}
+
+.fixed li a {
+    text-decoration: none;
+    color: var(--color-1-text);
 }
 
 .carousel img {
     border-radius: 0 0 25px 25px;
-}
-
-.carousel-indicators [data-bs-target]{
-    /* background-clip: text; */
 }
 
 .pagination .page-link {
@@ -102,9 +142,18 @@ header {
 
 .page-link:hover {
     /* z-index: 2; */
-    color: var(--bs-pagination-hover-color);
-    background-color: var(--blue-4-color);
+    color: var(--color-4-text);
+    background-color: var(--blue-6-color);
     border-color: var(--bd-pagination);
+}
+
+header {
+    position: relative;
+    /* height: 500px; */
+    background-color: var(--blue-5-color);
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 3px 15px var(--blue-4-color);
+    margin-bottom: 20px;
 }
 
 header .head {
@@ -157,7 +206,7 @@ header li a {
 
 aside {
     height: 100px;
-    background-color: var(--blue-6-color);
+    background-color: var(--blue-5-color);
     border-radius: 25px;
     box-shadow: 0 0 15px var(--blue-4-color);
     margin: 10px 0 20px;
@@ -171,7 +220,7 @@ section {
     width: 100%;
     float: right;
     padding-right: 12px;
-    background-color: var(--blue-4-color);
+    background-color: var(--blue-5-color);
     padding-bottom: 50px;
     border-radius: 25px;
     box-shadow: 0 0 15px var(--blue-4-color);
@@ -212,11 +261,12 @@ section .section-text {
 
 .fa-heart-o {
     position: absolute;
-    color: var();
+    color: var(--hear);
+    font-weight: bold;
     padding: 5px;
     top: 7px;
     right: 9px;
-    border-radius: 50px;
+    border-radius: 25px;
     transition: all 0.2s;
 }
 

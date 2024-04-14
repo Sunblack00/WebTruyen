@@ -6,15 +6,52 @@
     <title>HoangSang | HuuViet</title>
     <link rel="stylesheet" href="../BOOTSTRAP/bootstrap.min.css">
     <script src="../BOOTSTRAP/bootstrap.bundle.min.js"></script>
+    <script src="../JS/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="../CSS/style_home.css">
     <link rel="stylesheet" href="../FONT/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/png" href="../IMG/logo/logo-cao-xoanen-xanh.png" 3> 
+    <link rel="shortcut icon" type="image/png" href="../IMG/logo/logo-cao-xoanen-xanh.png" > 
+    <script>
+        $(document).ready(function() {
+           $(window).on('scroll',function() {
+            if(window.pageYOffset >= 150){
+                $('.fixed').css(
+                    'background-color','#d6ecfe'
+                )
+
+                $('.fixed').css(
+                    'display','flex'
+                )
+
+            }else{
+                $('.fixed').css(
+                    'display','none'
+                )
+            }
+            })
+        })
+    </script>
+  
 </head>
+
 <body>
     <div class="container-fluid">
+        <div class="fixed">
+            <div class="img">
+                <a href="home.html"><img src="../IMG/logo/logo-cao-xoanen-den.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Truyện mới</a></li>
+                    <li><a href="">Hot</a></li>
+                    <li><a href="">Thể loại</a></li>
+                    <li><a href="">Theo dõi</a></li>
+                    <li><a href="">Lịch sử</a></li>
+                </ul>
+            </nav>
+        </div>
         <header>
-            <div class="head">
-                <div class="img">
+            <div class="head" >
+                <div class="img img-head">
                 <a href="home.html"><img src="../IMG/logo/logo-cao-xoanen-den.png" alt=""></a>
             </div>
             <nav>
@@ -27,7 +64,7 @@
                 </ul>
             </nav>
             </div>
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel"> 
 
                 <!-- <div class="carousel-indicators"> -->
                 <div class="carousel-indicators">
@@ -76,7 +113,7 @@
                 </div>
             </div>
             <div id="dangky_dangnhap">
-                <button type="button" class="btn btn-secondary">Đăng ký</button>
+                <button type="button" class="btn btn-secondary dk">Đăng ký</button>
                 <button type="button" class="btn btn-secondary">Đăng nhập</button>
             </div>
         </aside>
@@ -182,7 +219,7 @@
                                 <a href="truyentranh.html">
                                     <img src="../IMG/img-content/chainsaw-man-tho-san-quy-5805.jpg" alt="" class="">
                                     <div class="tentruyen">
-                                        Chainsawmanh
+                                        Chainsaw man
                                     </div>
                                 </a>
                             </div>
@@ -243,10 +280,10 @@
                     </div>
                 </div>
                 <div >
-                    <ul class="pagination justify-content-center" style="margin:40px 20px 0px 20px; filter: drop-shadow(4px 6px 1px var(--blue-3-color))">
+                    <ul class="pagination justify-content-center" style="margin:40px 20px 0px 32px; filter: drop-shadow(4px 6px 1px var(--blue-3-color))">
                         <li class="page-item"><a class="page-link" href="#">‹</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item "><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item"><a class="page-link" href="#">4</a></li>
                         <li class="page-item"><a class="page-link" href="#">5</a></li>
@@ -255,6 +292,7 @@
                         <li class="page-item"><a class="page-link" href="#">8</a></li>
                         <li class="page-item"><a class="page-link" href="#">9</a></li>
                         <li class="page-item"><a class="page-link" href="#">10</a></li>
+                        <li class="page-item"><a class="page-link" href="#">11</a></li>
                         <li class="page-item"><a class="page-link" href="#">›</a></li>
                     </ul>
                 </div>
