@@ -153,10 +153,9 @@ html {
 
 header {
     position: relative;
-    /* height: 500px; */
     background-color: var(--blue-5-color);
     border-radius: 0 0 25px 25px;
-    box-shadow: 0 3px 15px var(--blue-4-color);
+    box-shadow: 0 0 15px var(--blue-3-color);
     margin-bottom: 20px;
 }
 
@@ -302,7 +301,7 @@ footer {
     margin-top: 20px;
     background-color: var(--blue-5-color);
     border-radius: 25px 25px 0 0;
-    box-shadow: 0 -5px 15px var(--blue-4-color);   
+    box-shadow: 0 0 15px var(--blue-4-color);   
     display: flex;
     align-items: center;
 }

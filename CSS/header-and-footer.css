@@ -23,11 +23,14 @@
     --search: #535d734e;
     --icon: #e74c3c;
     --hear: rgb(228, 214, 17);
-    --breadcrumb: #408cc9;
-    --pagination: #1874bf;
+    --pagination: #d6ecfe;
     --bd-pagination: #000000;
     --pagination-ac: #138486;
     --bd-pagination-ac: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .clear {
@@ -66,11 +69,6 @@
 
 .fa-facebook-square {
     margin-right: 5px;
-}
-
-.fa-icon:hover {
-    opacity: 0.8;
-    cursor: pointer;
 }
 
 .fixed {
@@ -124,14 +122,40 @@
     color: var(--color-1-text);
 }
 
+.pagination .page-link {
+    background-color: var(--pagination);
+    color: var(--black-color);
+    border: var(--bd-pagination) 1px solid; 
+}
+
+.active>.page-link {
+    z-index: 3;
+    color: var(--white-color);
+    background-color: var(--pagination-ac);
+    border-color: var(--bd-pagination-ac);
+}
+
+.page-link:hover {
+    color: var(--color-4-text);
+    background-color: var(--blue-6-color);
+    border-color: var(--bd-pagination);
+}
+
 header {
+    position: relative;
     display: flex;
     background-color: var(--blue-5-color);
     border-radius: 0 0 25px 25px;
-    box-shadow: 0 0 15px var(--blue-4-color);
+    box-shadow: 0 0 15px var(--blue-3-color);
     margin-bottom: 20px;
 }
 
+header .head {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    z-index: 5;
+}
 
 header .img {
     width: 30%;
@@ -172,114 +196,9 @@ header li a {
     color: var(--color-1-text);
 }
 
-.dau {
-    background-color: var(--blue-5-color);
-    padding: 50px;
-    box-shadow: 0 0px 15px var(--blue-4-color);
-    border-radius: 25px;
+.noidung {
+    height: 1000px;
 }
-
-.breadcrumb span {
-    color: var(--breadcrumb);
-}
-
-.breadcrumb  a:hover {
-    color: var(--color-3-text) !important;
-}
-
-.dau .bao {
-    max-width: 80%;
-    margin: auto;
-}
-
-.dau .main {
-    width: 100%;
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-}
-
-.dau .img {
-    width: 20%;
-}
-
-.dau .img img {
-    box-shadow: 10px 10px 15px var(--blue-3-color);
-    width: 100%;
-    border-radius: 14px;
-}
-
-.dau .thongtin {
-    border-radius: 25px;
-    width: 75%;
-    background-color: var(--blue-5-color);
-    box-shadow: 10px 10px 15px var(--blue-3-color);
-}
-
-.giua {
-    background-color: var(--blue-5-color);
-    margin-top: 20px;
-    padding: 50px;
-    box-shadow: 0 0px 15px var(--blue-4-color);
-    border-radius: 25px;
-}
-
-.giua .bao {
-    max-width: 80%;
-    margin: auto;
-}
-
-.giua .tieude {
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-    border-bottom: 3px solid var(--breadcrumb);
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.giua .noidung {
-    font-size: 15px;
-    margin: 13px 0;
-}
-
-.giua .chuong {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.giua .chuong li{
-    list-style: none;
-    border-bottom: 2px solid var(--color-3-text);
-    padding: 20px 0;
-}
-
-.giua li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.giua li a:hover {
-    color: var(--color-3-text);
-}
-
-.giua .chuong span {
-    margin-left: 10px;
-    font-size: 10px;
-    font-style: italic;
-}
-
-.giua .ul-1 {
-    width: 49%;
-}
-
-.giua .ul-2 {
-    width: 49%;
-}
-
 
 footer {
     height: 70px;
@@ -314,5 +233,6 @@ footer .name img {
     width: 20px;
     height: 20px;
 }
+
 
 
