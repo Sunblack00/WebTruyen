@@ -18,7 +18,7 @@
     --color-1-text: #000000;
     /* 0b9396 */
     --color-2-text: #138486;
-    --color-3-text: #66bdfa;
+    --color-3-text: #2bd4d7;
     --color-4-text: #000000;
     --search: #535d734e;
     --icon: #e74c3c;
@@ -117,7 +117,7 @@ html {
 
 .fixed li:hover a {
     padding-bottom: 4px;
-    border-bottom: 1px solid var(--color-2-text);
+    border-bottom: 1px solid var(--color-3-text);
     color: var(--color-3-text);
     transition:all 0.3s ;
 }
