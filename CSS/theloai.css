@@ -1,0 +1,25 @@
+.table-responsive{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.table-responsive p{
+    margin-top: 4px;
+}
+.btn{
+    margin-left: 10px;
+    margin-bottom: 50px;
+    display: inline;
+}
+#all{
+    background-color: orange;
+}
+#a{
+    background-color: #35c7c9;
+}
+.table-responsive-1{
+    margin-left: 210px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
