@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoangSang | HuuViet</title>
+    <link rel="stylesheet" href="../../BOOTSTRAP/bootstrap.min.css">
+    <script src="../../BOOTSTRAP/bootstrap.bundle.min.js"></script>
+    <script src="../../JS/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../CSS/style_home.css">
+    <link rel="stylesheet" href="../../FONT/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../CSS/login.css">
+    <link rel="shortcut icon" type="image/png" href="../../IMG/logo/logo-cao-xoanen-xanh.png"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../../JS/toggle.js"></script>
+  
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="fixed">
+            <div class="img">
+                <a href="home1.html"><img src="../../IMG/logo/logo-cao-xoanen-den.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Truyện mới</a></li>
+                    <li><a href="">Hot</a></li>
+                    <li><a href="">Thể loại</a></li>
+                    <li><a href="">Theo dõi</a></li>
+                    <li><a href="">Lịch sử</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header>
+            <div class="head" >
+                <div class="img img-head">
+                <a href="home1.html"><img src="../../IMG/logo/logo-cao-xoanen-den.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Truyện mới</a></li>
+                    <li><a href="">Hot</a></li>
+                    <li><a href="../home/theLoai.html">Thể loại</a></li>
+                    <li><a href="">Theo dõi</a></li>
+                    <li><a href="">Lịch sử</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div id="demo" class="carousel slide" data-bs-ride="carousel"> 
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="height: 150px;">
+                    </div>
+                </div>
+            </div> 
+        </header>
+            <div class="form">
+                <div id="form_box_login">
+                    <form action="" onsubmit="checkPassword(event)" id="lg-formm">
+                        <h2 class="text-primary" >ĐĂNG NHẬP</h2>
+                        <div id="form_input" >
+                            <input  type="email" id="username" name="username" class="form-control" style="height: 60px;" required placeholder="Email" >
+                        </div>
+                        <div id="form_input">
+                            <input  type="password" id="password" name="password" class="form-control" style="height: 60px;" placeholder="Mật khẩu" >
+                        </div>
+                        <div id="signin">
+                            <button type="submit"><p>ĐĂNG NHẬP</p> </button>
+                        </div>
+                        <div id="check">
+                            <label class="check_wrap"><input type="checkbox"> Ghi nhớ</label>
+                            
+                            <a href="#" style="color: white;">Quên mật khẩu</a>
+                        </div>  
+                        <div class="loginn">
+                            <label for=""> — Hoặc đăng nhập với — </label>
+                        </div>
+                        <div id="button_social">
+                            <a class="item1"href="https://www.facebook.com/" style="text-decoration: none;">
+                                <span class="facebook"><i id="face" class="fab fa-facebook"></i>
+                                    Facebook
+                                </span>
+                            </a>
+                            <a class="item2" href="https://twitter.com/" style="text-decoration: none;">
+                                <span   class="twitter"><i id="tw" class="fab fa-twitter"></i>
+                                    Twitter
+                                </span>
+                            </a> 
+                        </div>
+                        <div id="register">
+                            <p>Không có tài khoản?
+                                <a href="#" class="register_link">Đăng ký</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+    
+    
+                <div class="form_box_register">
+                    <form action="" id="register-form">
+                        <h2 class="text-primary">ĐĂNG KÝ</h2>
+                        <div class="form_input1">
+                            <input type="text" id="username-input" name="usernamee" class="form-control" style="height: 60px;" required placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="form_input1">
+                            <input type="email" id="username-input" name="usernamee" class="form-control" style="height: 60px;" required placeholder="Email">
+                        </div>
+                        <div class="form_input1">
+                            <input type="password" id="password-input" name="passwordd" class="form-control" style="height: 60px;"  placeholder="Mật khẩu">
+                        </div>
+                        <div class="form_input1">
+                            <input type="password" id="password-input" name="passwordd" class="form-control" style="height: 60px;"  placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <div id="signin1">
+                            <button type="submit"><p>ĐĂNG KÝ</p></button>
+                        </div>
+                        <div id="check1">
+                            <label class="check_wrap"><input type="checkbox"> Tôi đồng ý với các điều khoản & điều kiện</label>
+                            
+                        </div>  
+                        <div class="loginn">
+                            <label for=""> — Hoặc đăng nhập với — </label>
+                        </div>
+                        <div id="button_social1">
+                            
+                                <a class="item3"href="https://www.facebook.com/" style="text-decoration: none;">
+                                    <span class="facebook1"><i id="face1" class="fab fa-facebook"></i>
+                                        Facebook
+                                    </span>
+                                </a>
+                                <a class="item4" href="https://twitter.com/" style="text-decoration: none;">
+                                    <span class="twitter1"><i id="tw1"  class="fab fa-twitter"></i>
+                                        Twitter
+                                    </span>
+                                </a> 
+                            
+                            
+                        </div>
+                        <div id="register">
+                            <p>Đã có tài khoản?
+                                <a href="#" class="login_link">Đăng nhập</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form_box_register">
+                    <form action="" id="register-form">
+                        <h2 class="text-primary">ĐĂNG KÝ</h2>
+                        <div class="form_input1">
+                            <input type="text" id="username-input" name="usernamee" class="form-control" style="height: 60px;" required placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="form_input1">
+                            <input type="email" id="username-input" name="usernamee" class="form-control" style="height: 60px;" required placeholder="Email">
+                        </div>
+                        <div class="form_input1">
+                            <input type="password" id="password-input" name="passwordd" class="form-control" style="height: 60px;"  placeholder="Mật khẩu">
+                        </div>
+                        <div class="form_input1">
+                            <input type="password" id="password-input" name="passwordd" class="form-control" style="height: 60px;"  placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <div id="signin1">
+                            <button type="submit"><p>ĐĂNG KÝ</p></button>
+                        </div>
+                        <div id="check1">
+                            <label class="check_wrap"><input type="checkbox"> Tôi đồng ý với các điều khoản & điều kiện</label>
+                            
+                        </div>  
+                        <div class="loginn">
+                            <label for=""> — Hoặc đăng nhập với — </label>
+                        </div>
+                        <div id="button_social1">
+                            
+                                <a class="item3"href="https://www.facebook.com/" style="text-decoration: none;">
+                                    <span class="facebook1"><i id="face1" class="fab fa-facebook"></i>
+                                        Facebook
+                                    </span>
+                                </a>
+                                <a class="item4" href="https://twitter.com/" style="text-decoration: none;">
+                                    <span class="twitter1"><i id="tw1"  class="fab fa-twitter"></i>
+                                        Twitter
+                                    </span>
+                                </a> 
+                            
+                            
+                        </div>
+                        <div id="register">
+                            <p>Đã có tài khoản?
+                                <a href="#" class="login_link">Đăng nhập</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        
+
+       
+        <div class="clear"></div>
+        <script src="../../JS/login.js"></script>
+
+        <footer>
+           <div class="tong">
+                <div class="name">
+                    &copy;  <span>2024 HoangSang, HuuViet.</span>
+                    <span class="cham">·</span> <a href="" class="ft-chu">Quyền riêng tư</a> 
+                    <span class="cham">·</span> <a href="" class="ft-chu">Điều khoản</a>
+                </div>
+
+                <div class="icon" >
+                    <div class="fa fa-globe"></div> 
+                    <span ><a href="" class="ft-chu">Tiếng Việt (VN)</a></span>
+                    <div class="fa fa-facebook-square fa-icon"></div>
+                    <div class="fa fa-twitter-square fa-icon"></div>
+                </div>
+                
+           </div>
+        </footer>
+    </div>
+    </div>
+</body>
+</html>
