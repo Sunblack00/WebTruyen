@@ -11,25 +11,28 @@
     <link rel="stylesheet" href="../../FONT/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="../../IMG/logo/logo-cao-xoanen-xanh.png">
     <script>
-        $(document).ready(function() {
-           $(window).on('scroll',function() {
-            if(window.pageYOffset >= 150){
-                $('.fixed').css(
-                    'background-color','#d6ecfe'
-                )
-
-                $('.fixed').css(
-                    'display','flex'
-                )
-
-            }else{
-                $('.fixed').css(
-                    'display','none'
-                )
+        $(document).ready(function () {
+          $(window).on("scroll", function () {
+            if (window.pageYOffset >= 150) {
+              $(".fixed").css("background-color", "#d6ecfe");
+  
+              $(".fixed").css("display", "flex");
+            } else {
+              $(".fixed").css("display", "none");
             }
-            })
-        })
-    </script> 
+          });
+          var i = 0;
+          $(".tim").click(function () {
+            if (i % 2 == 0) {
+              $(".tim").removeClass("fa-heart-o");
+              $(".tim").addClass("fa-heart");
+            } else {
+              $(".tim").removeClass("fa-heart");
+              $(".tim").addClass("fa-heart-o");
+            }
+          i++;});
+        });
+      </script> 
 </head>
 <body>
     <div class="container-fluid">

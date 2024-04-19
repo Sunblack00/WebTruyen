@@ -1,3 +1,14 @@
+header .img {
+    border: none;
+}
+nav{
+    border: none;
+}
+
+.head {
+    background-image: linear-gradient(30deg,rgb(185,111,113),rgb(19,40,94),rgb(185,111,113));
+}
+
 
 .form{
     box-shadow: 5px 0px 20px #000;
@@ -503,5 +514,9 @@ input[type="password"]{
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
     border: 0;
     outline: 0;
+}
+
+footer {
+    background-image: linear-gradient(30deg,rgb(185,111,113),rgb(19,40,94),rgb(185,111,113));
 }
 

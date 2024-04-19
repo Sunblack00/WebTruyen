@@ -319,6 +319,10 @@ input:checked ~ input::before {
     color: var(--breadcrumb);
 }
 
+.fa-heart:before {
+    color: var(--breadcrumb);
+}
+
 .tim:hover {
     scale: 1.1;
 }
@@ -476,5 +480,4 @@ footer .name img {
     width: 20px;
     height: 20px;
 }
-
 

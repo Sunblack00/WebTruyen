@@ -1,270 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HoangSang | HuuViet</title>
-    <link rel="stylesheet" href="../../BOOTSTRAP/bootstrap.min.css">
+    <link rel="stylesheet" href="../../BOOTSTRAP/bootstrap.min.css" />
     <script src="../../BOOTSTRAP/bootstrap.bundle.min.js"></script>
     <script src="../../JS/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="../../CSS/style_truyentranh.css">
-    <link rel="stylesheet" href="../../FONT/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/png" href="../../IMG/logo/logo-cao-xoanen-xanh.png">
+    <link rel="stylesheet" href="../../CSS/style_truyentranh.css" />
+    <link
+      rel="stylesheet"
+      href="../../FONT/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../../IMG/logo/logo-cao-xoanen-xanh.png"
+    />
     <script>
-        $(document).ready(function() {
-           $(window).on('scroll',function() {
-            if(window.pageYOffset >= 150){
-                $('.fixed').css(
-                    'background-color','#d6ecfe'
-                )
+      $(document).ready(function () {
+        $(window).on("scroll", function () {
+          if (window.pageYOffset >= 150) {
+            $(".fixed").css("background-color", "#d6ecfe");
 
-                $('.fixed').css(
-                    'display','flex'
-                )
-
-            }else{
-                $('.fixed').css(
-                    'display','none'
-                )
-            }
-            })
-        })
-    </script> 
-</head>
-<body>
+            $(".fixed").css("display", "flex");
+          } else {
+            $(".fixed").css("display", "none");
+          }
+        });
+        var i = 0;
+        $(".tim").click(function () {
+          if (i % 2 == 0) {
+            $(".tim").removeClass("fa-heart-o");
+            $(".tim").addClass("fa-heart");
+          } else {
+            $(".tim").removeClass("fa-heart");
+            $(".tim").addClass("fa-heart-o");
+          }
+        i++;});
+      });
+    </script>
+  </head>
+  <body>
     <div class="container-fluid">
-        <div class="fixed">
-            <div class="img">
-                <a href="../home/home1.html"><img src="../../IMG/logo/logo-cao-xoanen-den.png" alt=""></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="">Truyện mới</a></li>
-                    <li><a href="">Hot</a></li>
-                    <li><a href="">Thể loại</a></li>
-                    <li><a href="">Theo dõi</a></li>
-                    <li><a href="">Lịch sử</a></li>
-                </ul>
-            </nav>
+      <div class="fixed">
+        <div class="img">
+          <a href="../home/home1.html"
+            ><img src="../../IMG/logo/logo-cao-xoanen-den.png" alt=""
+          /></a>
         </div>
-        <header>
-            <div class="img">
-                <a href="../home/home1.html"><img src="../../IMG/logo/logo-cao-xoanen-den.png" alt=""></a>
+        <nav>
+          <ul>
+            <li><a href="">Truyện mới</a></li>
+            <li><a href="">Hot</a></li>
+            <li><a href="">Thể loại</a></li>
+            <li><a href="">Theo dõi</a></li>
+            <li><a href="">Lịch sử</a></li>
+          </ul>
+        </nav>
+      </div>
+      <header>
+        <div class="img">
+          <a href="../home/home1.html"
+            ><img src="../../IMG/logo/logo-cao-xoanen-den.png" alt=""
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">Truyện mới</a></li>
+            <li><a href="">Hot</a></li>
+            <li><a href="">Thể loại</a></li>
+            <li><a href="">Theo dõi</a></li>
+            <li><a href="">Lịch sử</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="noidung">
+        <div class="dau">
+          <div class="bao">
+            <div class="bread">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a
+                    style="color: black; text-decoration: none"
+                    href="../home/home1.html"
+                    >Trang Chủ</a
+                  >
+                </li>
+                <li class="breadcrumb-item">
+                  <a style="color: black; text-decoration: none" href="#"
+                    >Hành Động</a
+                  >
+                </li>
+                <li class="breadcrumb-item active">
+                  <span>Solo Leveling</span>
+                </li>
+              </ul>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="">Truyện mới</a></li>
-                    <li><a href="">Hot</a></li>
-                    <li><a href="">Thể loại</a></li>
-                    <li><a href="">Theo dõi</a></li>
-                    <li><a href="">Lịch sử</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <div class="noidung">
-            <div class="dau">
-                <div class="bao">
-                    <div class="bread">
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a style="color: black;; text-decoration: none;" href="../home/home1.html">Trang Chủ</a></li>
-                            <li class="breadcrumb-item"><a style="color: black;; text-decoration: none;" href="#">Hành Động</a></li>
-                            <li class="breadcrumb-item active"><span>Solo Leveling</span></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tieude">
-                        <h4 >Solo Leveling</h4>
-                    </div>
-    
-                   <div class="main">
-                        <div class="img">
-                            <img src="../../IMG/home/home1/toi-thang-cap-mot-minh.jpg" alt="">
-                        </div>
-    
-                        <div class="thongtin ">
-                            <div class="fa fa-heart-o tim"></div>
-                            <div class="thongtin-1">
-                                <div class="cot">
-                                    <div class="text-1">Xếp hạng</div>
-                                    <div class="text-2">N/A, có 10300 lượt xem</div>
-                                </div>
-                                <div class="cot">
-                                    <div class="text-1">Tên khác</div>
-                                    <div class="text-2">Đang cập nhật</div>
-                                </div>
-                                <div class="cot">
-                                    <div class="text-1">Thể loại</div>
-                                    <div class="text-2"><a href=""><span>Hành Động,</span></a> <a href=""><span>Manhua,</span></a> <a href=""><span>Truyện Màu</span></a></div>
-                                </div>
-                                
-                                <a href="../noidung/sololeveling/solo-leveling-chap1.html"><div class="nut">Đọc từ đầu</div></a>
-                                <a href="../noidung/sololeveling/solo-leveling-chap3.html"><div class="nut">Chap mới nhất</div></a>
-                            </div>
-                            <div class="thongtin-2">
-                                <div class="cot">
-                                    <div class="text-1">Tình trạng</div>
-                                    <div class="text-2">Hoàn thành</div>
-                                </div>
+            <div class="tieude">
+              <h4>Solo Leveling</h4>
+            </div>
 
-                                <div class="cot">
-                                    <div class="text-1">Đánh giá</div>
-                                    <div class="text-2">
-                                        <div class="star_wrap">
-                                            <input type="radio" name="rate">
-                                            <input type="radio" name="rate">
-                                            <input type="radio" name="rate">
-                                            <input type="radio" name="rate">
-                                            <input type="radio" name="rate">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                   </div>
+            <div class="main">
+              <div class="img">
+                <img
+                  src="../../IMG/home/home1/toi-thang-cap-mot-minh.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="thongtin">
+                <div class="fa fa-heart-o tim"></div>
+                <div class="thongtin-1">
+                  <div class="cot">
+                    <div class="text-1">Xếp hạng</div>
+                    <div class="text-2">N/A, có 10300 lượt xem</div>
+                  </div>
+                  <div class="cot">
+                    <div class="text-1">Tên khác</div>
+                    <div class="text-2">Đang cập nhật</div>
+                  </div>
+                  <div class="cot">
+                    <div class="text-1">Thể loại</div>
+                    <div class="text-2">
+                      <a href=""><span>Hành Động,</span></a>
+                      <a href=""><span>Manhua,</span></a>
+                      <a href=""><span>Truyện Màu</span></a>
+                    </div>
+                  </div>
+
+                  <a href="../noidung/sololeveling/solo-leveling-chap1.html"
+                    ><div class="nut">Đọc từ đầu</div></a
+                  >
+                  <a href="../noidung/sololeveling/solo-leveling-chap3.html"
+                    ><div class="nut">Chap mới nhất</div></a
+                  >
                 </div>
-                
-            </div>
+                <div class="thongtin-2">
+                  <div class="cot">
+                    <div class="text-1">Tình trạng</div>
+                    <div class="text-2">Hoàn thành</div>
+                  </div>
 
-            <div class="cuoi">
-                <div class="bao">
-                    <div class="tieude">nội dung truyện</div>
-                    <div class="noidung">
-                        <span>Solo Leveling</span> là một trong những bộ truyện tranh nổi tiếng thuộc thể loại Action, Manhua, Truyện Màu được đăng tại HoangSang | HuuViet. 
-                        Đây là một trang web hàng đầu đọc truyện tranh với đầy đủ thể loại Manhwa, Manga, Manhua. 
-                        Truyện tranh <span>Solo Leveling</span> được dịch sang tiếng việt sớm nhất và hoàn chỉnh nhất trên HoangSang | HuuViet.
+                  <div class="cot">
+                    <div class="text-1">Đánh giá</div>
+                    <div class="text-2">
+                      <div class="star_wrap">
+                        <input type="radio" name="rate" />
+                        <input type="radio" name="rate" />
+                        <input type="radio" name="rate" />
+                        <input type="radio" name="rate" />
+                        <input type="radio" name="rate" />
+                      </div>
                     </div>
-                    <div class="tieude">danh sách chương</div>
-                    <div class="chuong">
-                        <div class="ul-1">
-                            <li><a href="">Chapter 1</a> <span>1 giờ trước</span></li>
-                            <li><a href="">Chapter 3</a> <span>1 giờ trước</span></li>
-                            <li><a href="">Chapter 5</a> <span>1 giờ trước</span></li>
-                            <li><a href="">Chapter 7</a> <span>15/04/2024</span></li>
-                            <li><a href="">Chapter 9</a> <span>15/04/2024</span></li>
-                            <li><a href="">Chapter 11</a> <span>15/04/2024</span></li>
-                            <li><a href="">Chapter 13</a> <span>15/04/2024</span></li>
-                        </div>
-                        <div class="ul-2">
-                            <li><a href="">Chapter 2</a> <span>15/04/2024</span></li>
-                            <li><a href="">Chapter 4</a> <span>15/04/2024</span></li>
-                            <li><a href="">Chapter 6</a> <span>15/04/2024</span></li>
-                            <li><a href="">Chapter 8</a> <span>15/04/2024</span></li>
-                            <li><a href="">Chapter 10</a> <span>15/04/2024</span></li>
-                            <li><a href="">Chapter 12</a> <span>15/04/2024</span></li>
-                            <li><a href="">Chapter 14</a> <span>15/04/2024</span></li>
-                        </div>
-                    </div>
-                    <div class="goiy">
-                        <div class="td-goiy">
-                           <h4>TRUYỆN BẠN CÓ THỂ QUAN TÂM</h4>
-                        </div>
-                        <div class="truyen">
-                           
-                        <div class="row justify-content-center align-items-center">
-                            <div class="col" align="center">
-                                <a href="./de-nhat-danh-sach.html">
-                                    <div class="img">
-                                        <img src="../../IMG/home/home1/de-nhat-danh-sach.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a href="./de-nhat-danh-sach.html">
-                                    <div class="text">
-                                        đệ nhất danh sách
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col" align="center">
-                                <a href="#">
-                                    <div class="img">
-                                        <img src="../../IMG/home/home1/chuyen-sinh-thanh-lieu-dot-bien.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="text">
-                                        chuyển sinh thành liễu đột biến
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col" align="center">
-                                <a href="#">
-                                    <div class="img">
-                                        <img src="../../IMG/home/home1/ki-nguyen-cua-anh-hung.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="text">
-                                        kỉ nguyên anh hùng
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col" align="center">
-                                <a href="#">
-                                    <div class="img">
-                                        <img src="../../IMG/home/home1/images.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="text">
-                                        ta là tà đế
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col" align="center">
-                                <a href="#">
-                                    <div class="img">
-                                        <img src="../../IMG/home/home1/tham-hoa-tu-linh-su.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="text">
-                                        thảm họa tử linh sư
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col" align="center">
-                                <a href="#">
-                                    <div class="img">
-                                        <img src="../../IMG/home/home1/tay-du-ky-ngoai-truyen.jpg" alt="">
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="text">
-                                        tây du kí ngoại truyện
-                                    </div>
-                                </a>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
 
-        <footer>
-            <div class="tong">
-                <div class="name">
-                    &copy;  <span>2024 HoangSang, HuuViet.</span>
-                    <span class="cham">·</span> <a href="" class="ft-chu">Quyền riêng tư</a> 
-                    <span class="cham">·</span> <a href="" class="ft-chu">Điều khoản</a>
-                </div>
-
-                <div class="icon" >
-                    <div class="fa fa-globe"></div> 
-                    <span ><a href="" class="ft-chu">Tiếng Việt (VN)</a></span>
-                    <div class="fa fa-facebook-square fa-icon"></div>
-                    <div class="fa fa-twitter-square fa-icon"></div>
-                </div>
-                
+        <div class="cuoi">
+          <div class="bao">
+            <div class="tieude">nội dung truyện</div>
+            <div class="noidung">
+              <span>Solo Leveling</span> là một trong những bộ truyện tranh nổi
+              tiếng thuộc thể loại Action, Manhua, Truyện Màu được đăng tại
+              HoangSang | HuuViet. Đây là một trang web hàng đầu đọc truyện
+              tranh với đầy đủ thể loại Manhwa, Manga, Manhua. Truyện tranh
+              <span>Solo Leveling</span> được dịch sang tiếng việt sớm nhất và
+              hoàn chỉnh nhất trên HoangSang | HuuViet.
             </div>
-        </footer>
+            <div class="tieude">danh sách chương</div>
+            <div class="chuong">
+              <div class="ul-1">
+                <li><a href="">Chapter 1</a> <span>1 giờ trước</span></li>
+                <li><a href="">Chapter 3</a> <span>1 giờ trước</span></li>
+                <li><a href="">Chapter 5</a> <span>1 giờ trước</span></li>
+                <li><a href="">Chapter 7</a> <span>15/04/2024</span></li>
+                <li><a href="">Chapter 9</a> <span>15/04/2024</span></li>
+                <li><a href="">Chapter 11</a> <span>15/04/2024</span></li>
+                <li><a href="">Chapter 13</a> <span>15/04/2024</span></li>
+              </div>
+              <div class="ul-2">
+                <li><a href="">Chapter 2</a> <span>15/04/2024</span></li>
+                <li><a href="">Chapter 4</a> <span>15/04/2024</span></li>
+                <li><a href="">Chapter 6</a> <span>15/04/2024</span></li>
+                <li><a href="">Chapter 8</a> <span>15/04/2024</span></li>
+                <li><a href="">Chapter 10</a> <span>15/04/2024</span></li>
+                <li><a href="">Chapter 12</a> <span>15/04/2024</span></li>
+                <li><a href="">Chapter 14</a> <span>15/04/2024</span></li>
+              </div>
+            </div>
+            <div class="goiy">
+              <div class="td-goiy">
+                <h4>TRUYỆN BẠN CÓ THỂ QUAN TÂM</h4>
+              </div>
+              <div class="truyen">
+                <div class="row justify-content-center align-items-center">
+                  <div class="col" align="center">
+                    <a href="./de-nhat-danh-sach.html">
+                      <div class="img">
+                        <img
+                          src="../../IMG/home/home1/de-nhat-danh-sach.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <a href="./de-nhat-danh-sach.html">
+                      <div class="text">đệ nhất danh sách</div>
+                    </a>
+                  </div>
+
+                  <div class="col" align="center">
+                    <a href="#">
+                      <div class="img">
+                        <img
+                          src="../../IMG/home/home1/chuyen-sinh-thanh-lieu-dot-bien.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="text">chuyển sinh thành liễu đột biến</div>
+                    </a>
+                  </div>
+
+                  <div class="col" align="center">
+                    <a href="#">
+                      <div class="img">
+                        <img
+                          src="../../IMG/home/home1/ki-nguyen-cua-anh-hung.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="text">kỉ nguyên anh hùng</div>
+                    </a>
+                  </div>
+
+                  <div class="col" align="center">
+                    <a href="#">
+                      <div class="img">
+                        <img src="../../IMG/home/home1/images.jpg" alt="" />
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="text">ta là tà đế</div>
+                    </a>
+                  </div>
+
+                  <div class="col" align="center">
+                    <a href="#">
+                      <div class="img">
+                        <img
+                          src="../../IMG/home/home1/tham-hoa-tu-linh-su.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="text">thảm họa tử linh sư</div>
+                    </a>
+                  </div>
+
+                  <div class="col" align="center">
+                    <a href="#">
+                      <div class="img">
+                        <img
+                          src="../../IMG/home/home1/tay-du-ky-ngoai-truyen.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="text">tây du kí ngoại truyện</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="tong">
+          <div class="name">
+            &copy; <span>2024 HoangSang, HuuViet.</span>
+            <span class="cham">·</span>
+            <a href="" class="ft-chu">Quyền riêng tư</a>
+            <span class="cham">·</span> <a href="" class="ft-chu">Điều khoản</a>
+          </div>
+
+          <div class="icon">
+            <div class="fa fa-globe"></div>
+            <span><a href="" class="ft-chu">Tiếng Việt (VN)</a></span>
+            <div class="fa fa-facebook-square fa-icon"></div>
+            <div class="fa fa-twitter-square fa-icon"></div>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
