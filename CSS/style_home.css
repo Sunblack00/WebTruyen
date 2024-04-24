@@ -219,6 +219,20 @@ aside {
     align-items: center;
 }
 
+.timkiem {
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.btn-secondary {
+    margin-right: 15px;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
 section {
     width: 100%;
     float: right;
@@ -403,3 +417,16 @@ footer .name img {
     width: 120px;
 }
 
+section h3 {
+    display: inline-block;
+    padding: 40px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+section h3 a {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font-weight: 400;
+}

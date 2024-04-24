@@ -31,6 +31,10 @@
     padding: 0;
 }
 
+
+.hidden {
+    display: none;
+}
 .cham {
     display: inline-block ;
     text-align: center ;
@@ -172,9 +176,7 @@ header li a {
     box-shadow: 0 0px 15px var(--blue-4-color);
     border-radius: 25px; 
 }
-.dau img{
-    margin-left: 350px;
-}
+
 
 .breadcrumb span {
     color: var(--breadcrumb);
@@ -326,7 +328,19 @@ input:checked ~ input::before {
     scale: 1.1;
 }
 
+.baohet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    margin: auto;
+    height: 50px;
+}
+
 .cuoi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--blue-5-color);
     margin-top: 20px;
     padding: 50px;
@@ -356,7 +370,10 @@ input:checked ~ input::before {
     justify-content: space-between;
     overflow-y: scroll;
 }
-
+.content {
+    width: 680px;
+    margin: auto;
+}
 .chuong::-webkit-scrollbar {
     width: 7px;
 }
@@ -481,15 +498,21 @@ footer .name img {
 }
 
 #chuongbtn{
+    width: 1500px;
     display: flex;
     justify-content: center;
 }
 
 #chuongbtn a{
-    background-color: #56b5f0;
+    background-color: #0ca3a5;
     margin: 10px;
+    border: #0ca3a5;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--blue-4-color);
 }
+
 #selectChap{
-    margin-left: 500px;
+    
     width: 30%;
 }

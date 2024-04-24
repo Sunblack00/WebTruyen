@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoangSang | HuuViet</title>
+    <link rel="stylesheet" href="../../BOOTSTRAP/bootstrap.min.css">
+    <script src="../../BOOTSTRAP/bootstrap.bundle.min.js"></script>
+    <script src="../../JS/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../../CSS/style_truyentranh.css">
+    <link rel="stylesheet" href="../../FONT/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="../../IMG/logo/logo-cao-xoanen-xanh.png">
+    <link rel="stylesheet" href="../../CSS/theloai.css">
+    <script>
+        $(document).ready(function() {
+           $(window).on('scroll',function() {
+            if(window.pageYOffset >= 150){
+                $('.fixed').css(
+                    'background-color','#d6ecfe'
+                )
+
+                $('.fixed').css(
+                    'display','flex'
+                )
+
+            }else{
+                $('.fixed').css(
+                    'display','none'
+                )
+            }
+            })
+        })
+    </script> 
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="fixed">
+            <div class="img">
+                <a href="../home/home1.html"><img src="../../IMG/logo/logo-cao-xoanen-den.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Hot</a></li>
+                    <li><a href="../home/theloai_tatca.html">Thể loại</a></li>
+                    <li><a href="">Theo dõi</a></li>
+                    <li><a href="">Chính sách</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header>
+            <div class="img">
+                <a href="../home/home1.html"><img src="../../IMG/logo/logo-cao-xoanen-den.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Hot</a></li>
+                    <li><a href="../home/theloai_tatca.html">Thể loại</a></li>
+                    <li><a href="">Theo dõi</a></li>
+                    <li><a href="">Chính sách</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="noidung">
+            <div class="dau">
+                <div class="bao">
+                    <div class="bread">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a style="color: black;; text-decoration: none;" href="../home/home1.html">Trang Chủ</a></li>
+                            <li class="breadcrumb-item active"><span>Thể loại</span></li>
+                        </ul>
+                    </div>
+                    <div class="dr">
+                        <h2>Tìm truyện</h2>
+                            <select class="form-control changed-redirect">
+                                <option selected="" value="">Tất cả thể loại</option>
+                                <option value="">Action</option>
+                                <option value="">Adult</option>
+                                <option value="">Adventure</option>
+                                <option value="">Anime</option>
+                                <option value="">Chuyển Sinh</option>
+                                <option value="">Comedy</option>
+                                <option value="">Comic</option>
+                                <option value="">Cooking</option>
+                                <option value="">Soft Yuri</option>
+                                <option value="">Sports</option>
+                                <option value="">Supernatural</option>
+                                <option value="">Tạp chí truyện tranh</option>
+                                <option value="">Thiếu Nhi</option>
+                                <option value="">Tragedy</option>
+                                <option value="">Trinh Thám</option>
+                                <option value="">Truyện scan</option>
+                                <option value="">Truyện Màu</option>
+                                <option value="">Việt Nam</option>
+                                <option value="">Webtoon</option>
+                                <option value="">Xuyên Không</option>
+                            </select>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="table-responsive">
+                        <a
+                        name=""
+                        id="all"
+                        class="btn btn-primary"
+                        href="../home/theloai_tatca.html"
+                        role="button"
+                        >Tất cả</a>
+
+                        <a
+                        name=""
+                        id="a"
+                        class="btn btn-primary"
+                        href="../home/theloai_hoanthanh.html"
+                        role="button"
+                        >Hoàn thành</a>
+
+                        <a
+                        name=""
+                        id="a"
+                        class="btn btn-primary"
+                        href="../home/theloai_chuahoanthanh.html"
+                        role="button"
+                        >Chưa hoàn thành</a>
+                    </div>
+                </div>
+
+                <section>
+                    <div class="section-text">
+                        <div class="row mt-5">
+                            <div class="col" align="center">
+                                <div class="box-shadow">
+                                    <a href="../truyentranh/de-nhat-danh-sach.html">
+                                        <img src="../../IMG/home/home1/de-nhat-danh-sach.jpg" alt="" class="">
+                                        <div class="tentruyen">
+                                            đệ nhất danh sách
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col" align="center">
+                                <div class="box-shadow">
+                                    <a href="../truyentranh/dai-quan-gia-la-ma-hoang.html">
+                                        <img src="../../IMG/home/home1/dai-quan-gia-la-ma-hoang.jpg" alt="" class="">
+                                        <div class="tentruyen">
+                                            Đại Quản Gia Là Ma Hoàng
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col" align="center">
+                                <div class="box-shadow">
+                                    <a href="../truyentranh/bach-quy-da-hanh.html">
+                                        <img src="../../IMG/home/home1/ngay-toi-sinh-ra-bach-quy-da-hanh-tuyet.jpg" alt="" class="">
+                                        <div class="tentruyen">
+                                            Bách quỷ dạ hành
+                                        </div>
+                                    </a>
+                                </div>
+                            </a></div>
+                            <div class="col" align="center">
+                                <div class="box-shadow">
+                                    <a href="../truyentranh/de-nhat-danh-sach.html">
+                                        <img src="../../IMG/home/home1/ta-sang-tao-truyen-thuyet-do-thi.jpg" alt="" class="">
+                                        <div class="tentruyen">
+                                            Ta kiến tạo truyền thuyết đô thị
+                                        </div>
+                                    </a>
+                                </div>
+                            </a></div>
+                            <div class="col" align="center"><a href="">
+                                <div class="box-shadow">
+                                    <a href="../truyentranh/de-nhat-danh-sach.html">
+                                        <img src="../../IMG/home/home1/ta-troi-sinh-da-la-nhan-vat-phan-dien.jpg" alt="" class="">
+                                        <div class="tentruyen">
+                                            Ta! Thiên Mệnh Đại Phản Phái
+                                        </div>
+                                    </a>
+                                </div>
+                            </a></div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col" align="center">
+                            <div class="box-shadow">
+                                <a href="../truyentranh/de-nhat-danh-sach.html">
+                                    <img src="../../IMG/home/home1/van-co-toi-cuong-tong.jpg" alt="" class="">
+                                    <div class="tentruyen">
+                                        Vạn cổ tối cường tông
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col" align="center">
+                            <div class="box-shadow">
+                                <a href="../truyentranh/de-nhat-danh-sach.html">
+                                    <img src="../../IMG/home/home1/tham-hoa-tu-linh-su.jpg" alt="" class="">
+                                    <div class="tentruyen">
+                                        thảm họa tử linh sư
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col" align="center">
+                            <div class="box-shadow">
+                                <a href="../truyentranh/solo-leveling.html">
+                                    <img src="../../IMG/home/home1/toi-thang-cap-mot-minh.jpg" alt="" class="">
+                                    <div class="tentruyen">
+                                        solo leveling
+                                    </div>
+                                </a>
+                            </div>
+                        </a></div>
+                        <div class="col" align="center">
+                            <div class="box-shadow">
+                                <a href="../truyentranh/de-nhat-danh-sach.html">
+                                    <img src="../../IMG/home/home1/chuyen-sinh-thanh-lieu-dot-bien.jpg" alt="" class="">
+                                    <div class="tentruyen">
+                                        Chuyển Sinh Thành Liễu Đột Biến
+                                    </div>
+                                </a>
+                            </div>
+                        </a></div>
+                        <div class="col" align="center">
+                          
+                        </div>
+                    </div>
+                </section>
+            
+            
+                
+                
+   
+            </div>
+
+            <div class="cuoi">
+              
+                    <div class="goiy">
+                        <div class="td-goiy">
+                           <h4>TRUYỆN BẠN CÓ THỂ QUAN TÂM</h4>
+                        </div>
+                        <div class="truyen">
+                           
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col" align="center">
+                                <a href="./de-nhat-danh-sach.html">
+                                    <div class="img">
+                                        <img src="../../IMG/home/home1/de-nhat-danh-sach.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="./de-nhat-danh-sach.html">
+                                    <div class="text">
+                                        đệ nhất danh sách
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col" align="center">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../../IMG/home/home1/chuyen-sinh-thanh-lieu-dot-bien.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="text">
+                                        chuyển sinh thành liễu đột biến
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col" align="center">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../../IMG/home/home1/ki-nguyen-cua-anh-hung.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="text">
+                                        kỉ nguyên anh hùng
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col" align="center">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../../IMG/home/home1/images.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="text">
+                                        ta là tà đế
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col" align="center">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../../IMG/home/home1/tham-hoa-tu-linh-su.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="text">
+                                        thảm họa tử linh sư
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col" align="center">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="../../IMG/home/home1/tay-du-ky-ngoai-truyen.jpg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="text">
+                                        tây du kí ngoại truyện
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="tong">
+                <div class="name">
+                    &copy;  <span>2024 HoangSang, HuuViet.</span>
+                    <span class="cham">·</span> <a href="" class="ft-chu">Quyền riêng tư</a> 
+                    <span class="cham">·</span> <a href="" class="ft-chu">Điều khoản</a>
+                </div>
+
+                <div class="icon" >
+                    <div class="fa fa-globe"></div> 
+                    <span ><a href="" class="ft-chu">Tiếng Việt (VN)</a></span>
+                    <div class="fa fa-facebook-square fa-icon"></div>
+                    <div class="fa fa-twitter-square fa-icon"></div>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

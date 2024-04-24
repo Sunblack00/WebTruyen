@@ -11,6 +11,9 @@
     margin-bottom: 50px;
     display: inline;
 }
+h2 {
+    margin: 20px 0px;
+}
 #all{
     background-color: orange;
 }
@@ -22,4 +25,86 @@
     margin-top: 40px;
     display: flex;
     justify-content: center;
+}
+
+.cuoi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goiy {
+    max-width: 1135.35px;
+}
+
+.btn {
+    background-color: #0ca3a5;
+    margin: 10px;
+    border: #0ca3a5;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+section {
+    width: 1135.35px;
+    padding-right: 12px;
+    background-color: var(--blue-5-color);
+    padding-bottom: 50px;
+    border-radius: 25px;
+    margin: auto;
+}
+
+section img {
+    width: 200px;
+    height: 300px;
+    border-radius: 25px 25px 0px 0px; 
+}
+
+section .tentruyen {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 13px;
+    height: 50px;
+    border-radius: 0 0 25px 25px; 
+    background-color: var(--black-color);
+    padding: 0 15px;
+}
+
+section .box-shadow {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px var(--blue-3-color);
+    transition: all 0.3s;
+}
+
+section .section-text {
+    margin: auto;
+    max-width: 1500px;
+}
+
+
+
+section .box-shadow:hover {
+    box-shadow: 10px 10px 15px var(--blue-2-color);
+}
+
+section .box-shadow:hover {
+    transform: translateY(-8px);
+}
+
+section .box-shadow:hover .tentruyen {
+    color: var(--blue-2-color);
+}
+
+section a {
+    color: var(--color-2-text);
+    text-decoration: none;
+    
 }

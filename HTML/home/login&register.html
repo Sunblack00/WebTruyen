@@ -14,7 +14,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="../../JS/toggle.js"></script>
-  
+  <script>
+        $(document).ready(function() {
+           $(window).on('scroll',function() {
+            if(window.pageYOffset >= 150){
+                $('.fixed').css(
+                    'background-color','#d6ecfe'
+                )
+
+                $('.fixed').css(
+                    'display','flex'
+                )
+
+            }else{
+                $('.fixed').css(
+                    'display','none'
+                )
+            }
+            })
+        })
+        
+  </script>
 </head>
 
 <body>
@@ -25,11 +45,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="">Truyện mới</a></li>
-                    <li><a href="">Hot</a></li>
-                    <li><a href="">Thể loại</a></li>
+                    <li><a href="../home/hot.html">Hot</a></li>
+                    <li><a href="../home/theloai_tatca.html">Thể loại</a></li>
                     <li><a href="">Theo dõi</a></li>
-                    <li><a href="">Lịch sử</a></li>
+                    <li><a href="">Chính sách</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,11 +59,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="">Truyện mới</a></li>
-                    <li><a href="">Hot</a></li>
-                    <li><a href="../home/theLoai.html">Thể loại</a></li>
+                    <li><a href="../home/hot.html">Hot</a></li>
+                    <li><a href="../home/theloai_tatca.html">Thể loại</a></li>
                     <li><a href="">Theo dõi</a></li>
-                    <li><a href="">Lịch sử</a></li>
+                    <li><a href="">Chính sách</a></li>
                 </ul>
             </nav>
             </div>

@@ -30,6 +30,17 @@
             })
         })
     </script> 
+     <script>
+      
+        $(document).ready(function() {
+           
+        $("#sl").change(function() {
+            const selectedLink = $(this).val();
+            $(selectedLink).trigger('click');
+            
+        });
+        });
+        </script>
 </head>
 <body>
     <div class="container-fluid">
@@ -39,11 +50,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="">Truyện mới</a></li>
-                    <li><a href="">Hot</a></li>
-                    <li><a href="">Thể loại</a></li>
+                    <li><a href="../../home/hot.html">Hot</a></li>
+                    <li><a href="../../home/theloai_tatca.html">Thể loại</a></li>
                     <li><a href="">Theo dõi</a></li>
-                    <li><a href="">Lịch sử</a></li>
+                    <li><a href="">Chính sách</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,11 +63,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="">Truyện mới</a></li>
-                    <li><a href="">Hot</a></li>
-                    <li><a href="">Thể loại</a></li>
+                    <li><a href="../../home/hot.html">Hot</a></li>
+                    <li><a href="../../home/theloai_tatca.html">Thể loại</a></li>
                     <li><a href="">Theo dõi</a></li>
-                    <li><a href="">Lịch sử</a></li>
+                    <li><a href="">Chính sách</a></li>
                 </ul>
             </nav>
         </header>
@@ -66,41 +75,50 @@
             <div class="dau">
                 <div class="bread">
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a style="color: black;; text-decoration: none;" href="../home/home1.html">Trang Chủ</a></li>
-                        <li class="breadcrumb-item"><a style="color: black;; text-decoration: none;" href="#">Hành Động</a></li>
-                        <li class="breadcrumb-item"><a style="color: black;; text-decoration: none;" href="../../truyentranh/solo-leveling.html">solo leveling</a></li>
-                        <li class="breadcrumb-item active"><span>chương 2</span></li>
+                        <li class="breadcrumb-item"><a style="color: black;; text-decoration: none;" href="../../home/home1.html">Trang Chủ</a></li>
+                        <li class="breadcrumb-item"><a style="color: black;; text-decoration: none;" href="../../home/theloai_tatca.html">Hành Động</a></li>
+                        <li class="breadcrumb-item"><a style="color: black;; text-decoration: none;" href="../../truyentranh/">Solo Leveling</a></li>
+                        <li class="breadcrumb-item active"><span>Chương 2</span></li>
                     </ul>
                 </div>
-                
                 <h1>Chương 2</h1>
-                <div class="mb-3" id="selectChap">
-                    <select class="form-select form-select-lg" name="" id="">
-                        <option value="">chapter 1</option>
-                        <option value="">chapter 2</option>
-                        <option value="">chapter 3</option>
+                
+                <div class="baohet" id="selectChap">
+                    <select class="form-select form-select-lg" name="" id="sl">
+                        <option value="#1">Chương 1</option>
+                        <option value="#2"selected="true">Chương 2</option>
+                        <option value="#3">Chương 3</option>
                     </select>
                 </div>
-                <div id="chuongbtn">
-                    <a name=""id="previous"class="btn btn-primary" href="../sololeveling/solo-leveling-chap1.html" role="button">Chương trước</a>
-                    <a name=""id="after"class="btn btn-primary" href="../sololeveling/solo-leveling-chap3.html" role="button">Chương sau</a>
+                <div class="hidden">
+                    <a href="../sololeveling/solo-leveling-chap1.html"><option id="1"></option></a>
+                    <a href="../sololeveling/solo-leveling-chap2.html"><option id="2"></option></a>
+                    <a href="../sololeveling/solo-leveling-chap3.html"><option id="3"></option></a>
                 </div>
-                <div id="content" class="flex flex-col items-center justify-center">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t1.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t2.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c23.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t4.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t5.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t6.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t7.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t8.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t9.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t10.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t11.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t12.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t13.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t14.jpeg" alt="">
-                    <img src="../../../IMG/mangaContent/soloLeveling/c2t15.jpeg" alt="">
+       
+                <div class="cuoi" style="margin-bottom: 20px;">
+                    <div id="chuongbtn" >
+                        <a name=""id="previous"class="btn btn-primary"href="../sololeveling/solo-leveling-chap1.html"role="button">Chương trước</a>
+                        <a name=""id="after"class="btn btn-primary" href="../sololeveling/solo-leveling-chap3.html" role="button">Chương sau</a>
+                    </div>
+                        
+                </div>
+                <div class="content" >
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t1.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t2.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c23.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t4.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t5.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t6.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t7.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t8.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t9.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t10.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t11.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t12.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t13.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t14.jpeg" loading="lazy"  alt="">
+                    <img src="../../../IMG/mangaContent/soloLeveling/c2t15.jpeg" loading="lazy"  alt="">
             </div>
 
             <div class="cuoi">

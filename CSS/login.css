@@ -6,7 +6,7 @@ nav{
 }
 
 .head {
-    background-image: linear-gradient(30deg,rgb(185,111,113),rgb(19,40,94),rgb(185,111,113));
+    background-color: #d6ecfe;
 }
 
 
@@ -19,8 +19,9 @@ nav{
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url(../IMG/nen/signInBackGround.png);
+    background-color: #d6ecfe;
     background-position: center;
+    box-shadow: 0 0 15px #93a7c2;
     background-size: cover;
 }
 .form.active{
@@ -30,7 +31,9 @@ nav{
 #form_box_login{
     margin-top: -50px;
     background: transparent;
+    background-color: #138486;
     border: 1px solid rgb(87, 85, 85);
+    box-shadow: 10px 10px 15px #93a7c2;
     border-radius: 15px;
     backdrop-filter: blur(50px);
     position: relative;
@@ -44,7 +47,7 @@ nav{
 }
 .form_box_register{
     
-    background: transparent;
+    background-color: #138486;
     border: 1px solid rgb(87, 85, 85);
     border-radius: 15px;
     backdrop-filter: blur(50px);
@@ -182,6 +185,7 @@ input[type="password"]{
 
 
 .form_box_register.active {
+    background-color: #138486;
     display: block;
     transform: translateX(0px);
 
@@ -517,6 +521,6 @@ input[type="password"]{
 }
 
 footer {
-    background-image: linear-gradient(30deg,rgb(185,111,113),rgb(19,40,94),rgb(185,111,113));
+    background-color: #d6ecfe;
 }
 
