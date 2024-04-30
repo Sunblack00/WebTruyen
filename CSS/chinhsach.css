@@ -288,6 +288,14 @@ nav #icon{
     box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
 }
 
+.form {
+    background-color: #d6ecfe;
+    padding: 10px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    box-shadow: 0 0px 15px #93a7c2; 
+}
+
 .form__field {
     width: 90%;
     border-radius: 50px;
@@ -298,4 +306,12 @@ nav #icon{
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
     border: 0;
     outline: 0;
+}
+
+nav {
+    border: none;
+}
+
+header .img {
+    border: none;
 }
